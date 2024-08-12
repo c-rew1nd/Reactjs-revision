@@ -1,5 +1,5 @@
 import Chai from "./Chai"
-
+// refresh by using reload windows
 function App() {
 
   return (
@@ -9,5 +9,5 @@ function App() {
     </>
   )
 }
-
+// we use <> </> to pass the code as a single object
 export default App
