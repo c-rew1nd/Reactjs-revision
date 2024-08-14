@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -27,7 +25,7 @@ function App() {
     else{
       console.log("value has to remian more than -1");
     }
-      
+
     console.log(counter)// this is updated later because it is comming from the set counter which is comming for the queue again.
   }
 
