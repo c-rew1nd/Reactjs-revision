@@ -10,7 +10,7 @@ function App() {
           <div
           className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-xl">
             <button 
-            onClick={() => setColor("red")} // we cannot write onClick={setColor("")} because the onClick expects us to pass a function not the reference of a function or executed function and thus it is not a problem of react or js but simply of syntax.
+            onClick={() => setColor("red")} // we cannot write onClick={setColor("")}  and use callback instead because the onClick expects us to pass a function not the reference of a function or executed function and thus it is not a problem of react or js but simply of syntax.
             className="outline-none px-4 py-1 rounded-full text-white shadow-3lg" 
             style={{backgroundColor: "red"}}>Red</button>
             <button 
