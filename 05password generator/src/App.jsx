@@ -23,7 +23,7 @@ function App() {
 
   const copyPasswordOnClick = useCallback(()=>{
     passwordCopy.current?.select()
-    passwordCopy.current?.setSelectionRange(0, 8)
+    passwordCopy.current?.setSelectionRange(0, 3)
     window.navigator.clipboard.writeText(password)
   },[password])
 
