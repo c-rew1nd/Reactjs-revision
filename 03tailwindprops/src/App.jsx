@@ -9,10 +9,8 @@ function App() {
     userName: 'Dreekt seayger',
     email: 'd@gmail.com'
   }
-
   let newArr = [1,2,3,4]
   // myObj, newArr can only be passed like {}
-
   return (
     <>
      <h1 className='bg-green-400 text-black p-4 rounded-xl mb-3'>Chai aur code</h1>
@@ -22,5 +20,4 @@ function App() {
     </>
   )
 }
-
 export default App
