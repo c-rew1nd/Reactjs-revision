@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 export default function Github() {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        fetch('https://api.github.com/users/c-rew1nd')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                setData(data);})
-    }, [])
+    const data = useLoaderData()
+    // const [data, setData] = useState([])
+    // useEffect(() => {
+    //     fetch('https://api.github.com/users/c-rew1nd')
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log(data);
+    //             setData(data);})
+    // }, [])
     return (
         <>
         <div className="text-center text-white p-4 text-3xl bg-gray-600 m-4">Github followers: {data.followers}</div>
@@ -17,4 +19,9 @@ export default function Github() {
         </div>
         </>
     )
+}
+
+export const githubInfoLoader = async () => {
+    const response = await fetch('https://api.github.com/users/c-rew1nd')
+    return response.json()
 }
