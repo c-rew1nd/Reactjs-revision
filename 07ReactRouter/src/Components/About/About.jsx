@@ -28,6 +28,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            <div>More about <NavLink to='https://github.com/hiteshchoudhary/chai-aur-react' className="text-blue-600">Chai aur React</NavLink></div>
         </div>
     );
 }
