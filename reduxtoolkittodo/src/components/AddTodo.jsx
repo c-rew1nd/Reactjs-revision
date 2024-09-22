@@ -18,7 +18,7 @@ function AddTodo() {
      */
     const addTodoHandler = (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
-        dispatch(addTodo({ text: input })); // Dispatch the addTodo action with the input text
+        dispatch(addTodo(input)); // Dispatch the addTodo action with the input text
         setInput(''); // Clear the input field
     };
 
